@@ -10,17 +10,22 @@
 		01A687C71FD3395500F98D77 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A687C61FD3395500F98D77 /* Account.swift */; };
 		01A687C91FD3397300F98D77 /* UserAccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A687C81FD3397300F98D77 /* UserAccountsViewController.swift */; };
 		01A687CC1FD33AC800F98D77 /* UserAccounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A687CB1FD33AC800F98D77 /* UserAccounts.swift */; };
+		01A687CE1FD3426F00F98D77 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A687CD1FD3426F00F98D77 /* Transaction.swift */; };
 		25F1D2701FD33571006BDB9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F1D26F1FD33571006BDB9C /* AppDelegate.swift */; };
 		25F1D2721FD33571006BDB9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F1D2711FD33571006BDB9C /* ViewController.swift */; };
 		25F1D2751FD33571006BDB9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25F1D2731FD33571006BDB9C /* Main.storyboard */; };
 		25F1D2771FD33571006BDB9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25F1D2761FD33571006BDB9C /* Assets.xcassets */; };
 		25F1D27A1FD33571006BDB9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25F1D2781FD33571006BDB9C /* LaunchScreen.storyboard */; };
+		25F1D2821FD3381F006BDB9C /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F1D2811FD3381F006BDB9C /* NetworkingManager.swift */; };
+		25F1D2841FD33861006BDB9C /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F1D2831FD33861006BDB9C /* Networking.swift */; };
+		25F1D2871FD3498B006BDB9C /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F1D2861FD3498B006BDB9C /* Helper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		01A687C61FD3395500F98D77 /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		01A687C81FD3397300F98D77 /* UserAccountsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAccountsViewController.swift; sourceTree = "<group>"; };
 		01A687CB1FD33AC800F98D77 /* UserAccounts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAccounts.swift; sourceTree = "<group>"; };
+		01A687CD1FD3426F00F98D77 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		25F1D26C1FD33571006BDB9C /* SBiztant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SBiztant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25F1D26F1FD33571006BDB9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		25F1D2711FD33571006BDB9C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,6 +33,9 @@
 		25F1D2761FD33571006BDB9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25F1D2791FD33571006BDB9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		25F1D27B1FD33571006BDB9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25F1D2811FD3381F006BDB9C /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
+		25F1D2831FD33861006BDB9C /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		25F1D2861FD3498B006BDB9C /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				01A687C61FD3395500F98D77 /* Account.swift */,
+				01A687CD1FD3426F00F98D77 /* Transaction.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -76,6 +85,8 @@
 		25F1D26E1FD33571006BDB9C /* SBiztant */ = {
 			isa = PBXGroup;
 			children = (
+				25F1D2881FD34A9F006BDB9C /* Helper */,
+				25F1D2851FD3411F006BDB9C /* Networking */,
 				01A687CA1FD33AB500F98D77 /* USBank-API */,
 				01A687C51FD3393200F98D77 /* Models */,
 				25F1D26F1FD33571006BDB9C /* AppDelegate.swift */,
@@ -87,6 +98,23 @@
 				25F1D27B1FD33571006BDB9C /* Info.plist */,
 			);
 			path = SBiztant;
+			sourceTree = "<group>";
+		};
+		25F1D2851FD3411F006BDB9C /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				25F1D2811FD3381F006BDB9C /* NetworkingManager.swift */,
+				25F1D2831FD33861006BDB9C /* Networking.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		25F1D2881FD34A9F006BDB9C /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				25F1D2861FD3498B006BDB9C /* Helper.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,11 +188,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25F1D2821FD3381F006BDB9C /* NetworkingManager.swift in Sources */,
 				25F1D2721FD33571006BDB9C /* ViewController.swift in Sources */,
 				25F1D2701FD33571006BDB9C /* AppDelegate.swift in Sources */,
+				01A687CE1FD3426F00F98D77 /* Transaction.swift in Sources */,
 				01A687C91FD3397300F98D77 /* UserAccountsViewController.swift in Sources */,
 				01A687C71FD3395500F98D77 /* Account.swift in Sources */,
 				01A687CC1FD33AC800F98D77 /* UserAccounts.swift in Sources */,
+				25F1D2841FD33861006BDB9C /* Networking.swift in Sources */,
+				25F1D2871FD3498B006BDB9C /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
